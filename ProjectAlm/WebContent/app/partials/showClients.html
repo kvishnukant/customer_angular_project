@@ -1,0 +1,46 @@
+
+	<table  border="1" >
+		<caption>Registered Client</caption>
+		<thead class="bg1" > 
+			<tr >
+			    <th>Id</th>
+			    <th>Name</th>
+			    <th>Address</th>
+			    <th>Email</th>
+			    <th>Domain</th>
+			    <th>Description</th>
+			    <th>Revenue</th>
+				<th>Employees</th>
+			    <th>Present Address</th>
+			    <th>CEO</th>				
+				<th>CTO</th>
+				<th>Contact No.</th>
+			    <th>Offices</th>
+			    <th>Status</th>		
+			    <th>Edit</th>		
+			    <th>Delete</th>		
+			    		
+			</tr>
+		</thead>
+		<tbody>	 <!-- ng-class-odd="'odd'" ng-class-even="'even'" -->	
+			<tr ng-repeat="client in newclient"  class="warning">
+			 	<td align="center">{{client.clientid}}</td>
+			    <td align="center">{{client.name}}</td>    
+				<td align="center">{{client.address}}</td>
+			    <td align="center">{{client.email}}</td>
+			    <td align="center">{{client.domainList}}</td>
+			    <td align="center">{{client.description}}</td>
+			    <td align="center">{{client.revenue}}</td>
+			    <td align="center">{{client.noOfEmployees}}</td>
+			    <td align="center">{{client.presence}}</td>
+			    <td align="center">{{client.CEO}}</td>
+			    <td align="center">{{client.CTO}}</td>
+			    <td align="center">{{client.poc}}</td>
+			    <td align="center">{{client.offices}}</td>
+			    <td align="center">{{client.status}}</td>    
+			    <td align="center"><a href="#/client/{{client.clientid}}" class="btn btn-info">Edit</a></td>
+			    <td align="center"><button id="del" type="submit" value="Delete" ng-click="deleteClient(client.clientid)" class="btn btn-warning">Delete</button></td>        
+		 	</tr>		 
+		</tbody>
+	</table>  
+<div class="home"><a href="#admin" class="btn btn-success">Back to Admin</a></div>

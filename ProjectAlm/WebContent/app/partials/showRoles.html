@@ -1,0 +1,29 @@
+		
+	<table  border="1" align="center">
+		<caption>Roles Assigned to Users </caption>
+		<thead class="bg1"> 
+			<tr>	
+				<th>ID</th>		
+			    <th>User Name</th>			
+			    <th>Description</th>
+			    <th>Status</th>
+			    <th>Role</th>			 
+			 <!--    <th>Operations</th> -->
+			 	
+			</tr>
+		</thead>
+		<tbody>		
+			<tr ng-repeat="r in role">	
+			 	<td align="center">{{r.roleid}}</td>
+			    <td align="center">{{r.name}}</td>    								
+			    <td align="center">{{r.description}}</td>    				
+			    <td align="center">{{r.status}}</td>
+			    <td align="center">{{r.roletype}}</td>
+			   <!--  <td align="center"><button type="submit" value="Delete" ng-click="deleteUser(user.userid)">Delete</button></td> -->
+			         
+		 	</tr>		 
+		</tbody>
+	</table>  
+
+
+<div class="home"><a href="#admin" class="btn btn-success">Back to Admin</a></div>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="project">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Client &amp; User Management</title>
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />  											
+	<link rel="stylesheet" type="text/css" href="app/css/app.css"/>	
+	<link rel="stylesheet" type="text/css" href="app/css/styles.css"/>	
+	
+    
+    <!--  Angular Libraries-->
+
+			
+</head>	
+
+<body >	
+    <script type="text/javascript" src="app/lib/angular/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="app/lib/angular/angular.js"></script>        
+    <script type="text/javascript" src="app/lib/angular/angular-loader.js"></script>
+    <script type="text/javascript" src="app/lib/angular/angular-route.js"></script>
+  	<script type="text/javascript" src="app/lib/angular/angular-resource.js"></script>
+  	
+  	<!-- Controllers(Routing,Functions) -->
+  	<script type="text/javascript" src="app/js/app.js"></script>
+  	<script type="text/javascript" src="app/js/services.js"></script>
+  	<script type="text/javascript" src="app/js/controllers.js"></script>
+	<div id="arrange">
+		<fieldset>
+			<img src="app/img/logo.jpg" class="img-logo">			
+			<h1 id="tag1">Client &amp; User Management</h1>
+		</fieldset>
+	</div>
+	
+	<ul class="menu">
+	
+    	<li><a href="#">User Login</a></li>				
+   		<li><a href="#role">Roles</a></li>		
+   		<li><a href="#clntreg">Client Register</a></li>	
+   		<li><a href="#grp">Group</a></li>   	   		
+   		<li><a href="#admin">Admin</a></li>   
+   			   				   		
+  	</ul>
+  	
+  	<div ng-view></div> 
+	
+</body>
+
+</html>

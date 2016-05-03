@@ -1,0 +1,28 @@
+		
+	<table  border="1" align="center">
+		<caption>Registered User</caption>
+		<thead class="bg1"> 
+			<tr>			
+			    <th>Id</th>			
+			    <th>Name</th>
+			    <th>Email</th>
+			    <th>Gender</th>
+			 
+			    <th>Operations</th>
+			 	
+			</tr>
+		</thead>
+		<tbody>		
+			<tr ng-repeat="user in newuser">	
+			    <td align="center">{{user.userid}}</td>    								
+			    <td align="center">{{user.name}}</td>    				
+			    <td align="center">{{user.email}}</td>
+			    <td align="center">{{user.gender}}</td>
+			    <td align="center"><button type="submit"  value="Delete" ng-click="deleteUser(user.userid)"  class="btn btn-warning">Delete</button></td>
+			         
+		 	</tr>		 
+		</tbody>
+	</table>  
+
+
+<div class="home"><a href="#admin" class="btn btn-success">Back to Admin</a></div>

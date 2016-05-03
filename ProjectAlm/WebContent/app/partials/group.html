@@ -1,0 +1,32 @@
+<div id="grp">
+<form name="groupForm"  ng-submit="saveGroup()">  
+	
+		<h2 class="bg1">Group</h2>	
+		<fieldset><label>Name:</label>
+			<input type="text" name="name" ng-model="group.name" placeholder="Name"   required/>
+		</fieldset>
+
+		<fieldset><label>Description:</label>
+			<input type="text" name="description" ng-model="group.description" placeholder="Discription" pattern="[A-Za-z0-9 _]*" required/>
+		</fieldset>
+
+		<fieldset>
+			<label>Status:</label><div style="margin-left:194px;width:160px">
+			<input type="radio" name="status"  ng-model="group.status" value="ACTIVE">Active &nbsp;
+		    <input type="radio" name="status" ng-model="group.status" value="INACTIVE">InActive</div>
+		</fieldset>       
+		
+		<fieldset>
+			<label>Permissions:</label><div style="margin-left:194px;width:160px">
+		 	<input type="checkbox" name="permission1" ng-model="group.permission1" value="READ AND WRITE">System Admin
+			<input type="checkbox" name="permission2" ng-model="group.permission2" value="READ">User</div>					 			
+		</fieldset>
+
+		<fieldset>
+			<input type="submit" value="Save" class="btn-primary">
+			<input type="reset" value="Reset" >		   
+		</fieldset>
+</form>
+</div>
+
+<div class="home"><a href="#" class="btn btn-success">Home</a></div>

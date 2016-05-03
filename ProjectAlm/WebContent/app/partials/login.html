@@ -1,0 +1,26 @@
+
+<div id="login">
+<form name="login" method="post" >
+
+	<h2 class="bg1">Login</h2>
+	<fieldset>
+		<label for="username">UserName:</label>
+		<input type="text" class="first" name="userName" ng-model="user.name" placeholder=" User Name" required>
+		 <!--<span class="error" ng-show="login.userName.$error.required">Required!</span>-->
+	</fieldset>
+	<fieldset>
+		<label for="password">Password:</label>
+		<input type="password" class="second" name="userPassword" ng-model="user.pass" ng-minlength="6" placeholder=" Password" required>
+		<!--<span class="error" ng-show="login.userPassword.$error.minlength">Password is too short!</span>-->
+     
+	</fieldset>
+	<fieldset>
+		<input type="submit" value="Login" class="btn-primary"/>
+		<input type="reset" class="Reset"  class="btn-primary"/>
+	</fieldset>
+	<br>
+	<label style="float:right">New User ? &nbsp;<a href="#userreg">Sign In</a></label>
+	</form>
+</div>
+
+<div class="home"><a href="#" class="btn btn-success">Home</a></div>

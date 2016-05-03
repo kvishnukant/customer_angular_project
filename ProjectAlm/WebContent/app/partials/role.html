@@ -1,0 +1,44 @@
+<div id="role">
+<form name="roleForm"  ng-submit="saveRole()">  
+	
+		<h2 class="bg1">Role</h2>	
+
+		<!-- <fieldset>
+		                <label>Name:</label>
+			<input type="text" name="name" ng-model="role.name" placeholder="Name" pattern="[A-Za-z]*"  required/>
+			
+			
+		</fieldset> -->
+		
+		<fieldset >
+			<label>User Name</label>
+			<select style="margin-left:42px;width:160px;" ng-model="selectedRole">
+				<option value="">----Select----</option>
+				<option ng-repeat="role in roles" value="{{role.name}}" >{{role.name}}</option>
+			</select>
+		</fieldset>
+		
+		<fieldset>
+			<label>Description:</label>
+			<input type="text" name="description" ng-model="aRole.description" placeholder="Discription" pattern="^[A-Za-z0-9_]*" required/>
+		</fieldset>
+
+		<fieldset>
+			<label>Status:</label><div style="margin-left:145px">
+			<input type="radio" name="status"  ng-model="aRole.status" value="Active">Active &nbsp;
+		    <input type="radio" name="status"  ng-model="aRole.status" value="InActive">InActive</div>
+		</fieldset>       
+		
+		<fieldset>
+			<label>Role:</label><div style="margin-left:145px">
+		    <input type="radio" name="roletype" ng-model="aRole.roletype" value="SystemAdmin">System Admin
+			<input type="radio" name="roletype" ng-model="aRole.roletype" value="User">User </div>
+	    </fieldset>
+				
+		<fieldset>
+			<input type="submit" value="Save" class="btn-primary"><input type="reset" value="Reset" >			   
+		</fieldset>		
+</form>
+</div>
+
+<div class="home"><a href="#" class="btn btn-success">Home</a></div>

@@ -1,0 +1,113 @@
+<div id="clntreg">	
+	<div>	
+			<form name="clientForm">
+
+				<h2 class="bg1">Client Registration</h2>
+				<fieldset>
+					<label>Name</label>
+					<input type="text"  name="name" ng-model="newclient.name" placeholder="User Name"  pattern="[A-Za-z _]*"  required>
+				</fieldset>
+				
+				<fieldset>
+					<label>Address</label>
+					<input type="text"  name="address" ng-model="newclient.address" placeholder="Address" pattern="[A-Za-z0-9 _]*" required>
+				</fieldset>
+				
+				<fieldset>
+					<label>Email-id</label>
+					<input type="email"  placeholder="Email-id" name="email" ng-model="newclient.email"  required>
+					<div id="clienterror"><span class="error" ng-show="clientForm.email.$error.email">Not Valid Email!</span></div>
+				</fieldset>
+				
+				<fieldset>
+				
+					<label>Domain</label>
+					
+					<select name="domainList"  ng-model="newclient.domainList" title="Select Domain" style="margin-left:85px;width:160px">						
+						<option value="">----Select----</option>					
+						<option value="MEDIA &amp; ENTERTAINMENT" >MEDIA &amp; ENTERTAINMENT</option>
+						<option value="RETAILS &amp; DISTRIBUTION" >RETAILS &amp; DISTRIBUTION</option>
+						<option value="HEALTHCARE & LIFESCIENCE" >HEALTHCARE & LIFESCIENCE</option>
+						<option value="TRAVEL &amp; HOSPITALITY" >TRAVEL &amp; HOSPITALITY</option>
+						<option value="TELECOM">TELECOM</option>
+												
+					</select>
+
+				</fieldset>									
+					
+				<fieldset>
+					<label>Description</label>
+					<input type="text" placeholder="Description" name="description" ng-model="newclient.description" pattern="[A-Za-z0-9 _]*" required>
+				</fieldset>
+
+				<fieldset>
+					<label>Revenue</label>
+					<input type="text"  placeholder="Revenue" name="revenue" ng-model="newclient.revenue" pattern="[0-9]*"  required>
+				</fieldset>
+
+				<fieldset>
+					<label>Employees</label>
+					<input type="text"  placeholder="Number of Employees" name="numofemp" ng-model="newclient.noOfEmployees" pattern="[0-9]*"  required>
+				</fieldset>
+				
+				<fieldset>
+					<label>Presence</label> 
+					<input type="text"  placeholder="Presence" name="presence" ng-model="newclient.presence" pattern="[A-Za-z0-9 _]*" required>
+				</fieldset>
+
+				<fieldset>
+					<label>CEO</label>
+					<input type="text"  placeholder="CEO Name" name="CEO" ng-model="newclient.CEO" pattern="[A-Za-z _]*" required>
+				</fieldset>
+
+				<fieldset>	
+					<label>CTO</label>
+					<input type="text"  placeholder="CTO Name" name="CTO" ng-model="newclient.CTO" pattern="[A-Za-z _]*" required>
+				</fieldset>
+
+				<fieldset>
+					<label>Contact</label>
+					<input type="text"  placeholder="Contact Number" name="poc" ng-model="newclient.poc" pattern="[0-9]*" max-length="12"  required>
+					<!-- <div id="clienterror"><span class="error" ng-show="clientForm.contact.$error.number">Not Valid Number!</span></div> -->
+				</fieldset>
+
+				<fieldset>
+					<label>Offices</label>
+					<input type="text"  placeholder="Office Locations" name="offices" ng-model="newclient.offices" pattern="[A-Za-z _]*" required>
+				</fieldset>
+
+				<fieldset>
+					<label>Status</label>
+					
+					<select name="status" ng-model="newclient.status" style="margin-left:91px;width:162px">	
+						
+						<option value="">----Select----</option>
+						<option value="NEW">NEW</option>	
+						<option value="Active">ACTIVE</option>
+						<option value="BLOCKED">BLOCKED</option>
+						<option value="INACTIVE">INACTIVE</option>
+						<option value="RETURNED">RETURNED</option>
+															
+					</select>
+					
+				</fieldset>
+							
+				<fieldset>
+					<input type="button" id="update" value="Update" class="btn-primary" ng-click="updateClient()">
+					<input type="submit" id="submit" value="Submit" class="btn-primary" ng-click="saveClient()">
+					<input type="reset" value="Reset">	
+	
+							
+				</fieldset>
+
+			</form>
+		</div>
+	</div>		
+	
+	<div class="home"><a href="#" class="btn btn-success">Home</a></div>
+	
+	
+	
+	
+ 
+	

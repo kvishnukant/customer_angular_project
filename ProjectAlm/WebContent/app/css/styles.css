@@ -1,0 +1,286 @@
+.bg1 {
+	color:#fff;
+	background-color:#428bca;
+	border-color:#357ebd
+}
+
+fieldset input[type="submit"] {
+	margin-left:50px;
+	
+}
+
+fieldset input[type="reset"] {
+	margin-left:50px;
+	
+}
+
+#login {
+	width:40%;
+	display:block;
+	padding:20px;
+	background:#CCC;
+	margin:30px auto;
+	border-radius:15px;
+	box-shadow:0px 1px 6px #000000;
+}
+
+#login fieldset {
+	width:70%;
+	margin:10px auto;
+	border:1px;
+}
+
+#login fieldset input[type="text"] {
+	float:right;
+	border-radius:8px;
+	width:130px;	
+	padding-left:17px;
+}
+
+#login fieldset input[type="text"].first {
+	background-image:url(../img/user.png);
+	background-repeat:no-repeat;
+	//background-size:20px 70%;
+	background-position:1px 2px;	
+}
+
+#login fieldset input[type="password"].second {
+	background-image:url(../img/lock.png);
+	background-repeat:no-repeat;
+	//background-size:20px 70%;
+	background-position:2px 3px;	
+}
+
+#login fieldset input[type="password"] {
+	float:right;
+	border-radius:8px;
+	width:130px;	
+	padding-left:17px;
+}
+
+fieldset label {
+	float:left;
+}
+
+
+
+#login h2{
+	text-align:center;
+	width:50%;
+	padding:5px;
+	margin:0px auto;
+	border-radius:10px;
+	box-shadow:0px 1px 6px #000000;
+	text-shadow:0px 1px 1px #FFFFFF;
+}
+
+
+
+
+#clntreg{
+	width:45%;
+	display:block;
+	padding:20px;
+	background:#CCC;
+	margin:30px auto;
+	border-radius:15px;
+	box-shadow:0px 1px 6px #000000;
+}
+#clnttbl{
+	width:98%;
+	display:block;
+	padding:10px;
+	background:#CCC;
+	margin:30px auto;
+	border-radius:15px;
+	box-shadow:0px 1px 6px #000000;
+}
+#clnttbl h2{
+	text-align:center;
+	width:50%;
+	padding:5px;
+	margin:0px auto;
+	border-radius:10px;
+	box-shadow:0px 1px 6px #000000;
+	text-shadow:0px 1px 1px #FFFFFF;
+}
+
+
+#clntreg fieldset {
+	width:65%;
+	margin:5px auto;
+	border:1px;
+}
+
+
+#clntreg fieldset input[type="text"] {
+	float:right;
+	border-radius:8px;
+	width:150px;		
+}
+#clntreg fieldset input[type="email"] {
+	float:right;
+	border-radius:8px;
+	width:150px;		
+}
+
+
+#clntreg h2{
+	text-align:center;
+	width:80%;
+	padding:5px;
+	margin:0px auto;
+	border-radius:10px;
+	box-shadow:0px 1px 6px #000000;
+	text-shadow:0px 1px 1px #FFFFFF;
+}
+
+#usrreg {
+	width:40%;
+	display:block;
+	padding:20px;
+	background:#CCC;
+	margin:30px auto;
+	border-radius:15px;
+	box-shadow:0px 1px 6px #000000;
+}
+#usrtbl {
+	width:56%;
+	display:block;
+	padding:20px;
+	background:#CCC;
+	margin:30px auto;
+	border-radius:15px;
+	box-shadow:0px 1px 6px #000000;
+}
+#usrtbl h2{
+	text-align:center;
+	width:60%;
+	padding:5px;
+	margin:0px auto;
+	border-radius:10px;
+	box-shadow:0px 1px 6px #000000;
+	text-shadow:0px 1px 1px #FFFFFF;
+}
+
+#usrreg h2{
+	text-align:center;
+	width:80%;
+	padding:5px;
+	margin:0px auto;
+	border-radius:10px;
+	box-shadow:0px 1px 6px #000000;
+	text-shadow:0px 1px 1px #FFFFFF;
+}
+#usrreg fieldset {
+	width:72%;
+	margin:5px auto;
+	border:1px;
+}
+
+#usrreg fieldset input[type="text"] {
+	float:right;
+	border-radius:8px;
+	width:150px;		
+}
+#usrreg fieldset input[type="password"] {
+	float:right;
+	border-radius:8px;
+	width:150px;		
+}
+#usrreg fieldset input[type="email"] {
+	float:right;
+	border-radius:8px;
+	width:150px;		
+}
+
+#usrgender{
+	float:right;
+	margin-right:37px;
+}
+
+
+/* 
+Role
+ */
+#role {
+	width:40%;
+	display:block;
+	padding:20px;
+	background:#CCC;
+	margin:30px auto;
+	border-radius:15px;
+	box-shadow:0px 1px 6px #000000;
+}
+
+#role h2{
+	text-align:center;
+	width:50%;
+	padding:5px;
+	margin:0px auto;
+	border-radius:10px;
+	box-shadow:0px 1px 6px #000000;
+	text-shadow:0px 1px 1px #FFFFFF;
+}
+#role fieldset {
+	width:75%;
+	margin:5px auto;
+	border:1px;
+}
+
+#role fieldset input[type="text"] {
+	float:right;
+	border-radius:8px;
+	width:150px;		
+}
+
+#rolestat{
+	float:right;
+	margin-right:14px;
+}
+
+#roler{
+	float:right;
+	margin-right:-19px;
+}
+
+
+
+
+/* Group */
+#grp {
+	width:35%;
+	display:block;
+	padding:20px;
+	background:#CCC;
+	margin:30px auto;
+	border-radius:15px;
+	box-shadow:0px 1px 6px #000000;
+}
+
+
+
+
+#grp fieldset input[type="text"] {
+	float:right;
+	border-radius:8px;
+	width:150px;		
+}
+
+#grp h2{
+	text-align:center;
+	width:50%;
+	padding:5px;
+	margin:0px auto;
+	margin-bottom:5px;
+	border-radius:10px;
+	box-shadow:0px 1px 6px #000000;
+	text-shadow:0px 1px 1px #FFFFFF;
+}
+.home{
+	/*margin-left:50%;*/
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	
+}
